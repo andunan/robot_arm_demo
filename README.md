@@ -3,7 +3,7 @@ A demo shows a 6-DoF robot arm move from a position to another position.
 
 六轴机械臂点对点运动控制仿真
 运动gif
-/media/sf_shared_files/demo.gif
+/home/rose5710/robot_arm_demo/demo.gif
 
 ## 项目简介
 一个简洁、清晰的仿真演示，展示如何控制一个六轴仿真机械臂从三维空间中的指定起始点，规划一条平滑轨迹，并精确运动到指定目标点。
@@ -19,22 +19,22 @@ A demo shows a 6-DoF robot arm move from a position to another position.
 
 环境要求
 
-· Python 3.10.12
+· Python 3.10.12  
 · 具体见requirement.txt
 
 
-# 1. 克隆仓库
+## 1. 克隆仓库
 git https://github.com/andunan/robot_arm_demo
 
-# 2. 安装依赖
+## 2. 安装依赖
 
-# 3. 运行仿真模拟程序(该项目使用的仿真模拟程序不开源,可以根据接口换成自己的模拟程序)
+## 3. 运行仿真模拟程序(该项目使用的仿真模拟程序不开源,可以根据接口换成自己的模拟程序)
 
-# 4. 在虚拟机里面运行ik_self_test.py
+## 4. 在虚拟机里面运行ik_self_test.py
 
 运行后，仿真界面将打开，机械臂将自动从预定义的起始位姿运动到目标位姿。
 
-
+```
 robot_arm_demo/
 ├── README.md               # 本文件
 ├── requirements.txt        # Python依赖列表
@@ -50,8 +50,9 @@ robot_arm_demo/
 │   ├── publisher.py                    #发布控制消息
 │   ├── save_trajectory_to_file.py
 │   ├── SOARM101.py                 #正逆运动学
+```
 
-## 算法与原理简介
+## 5.算法与原理简介
 本项目实现了从笛卡尔空间到关节空间的运动控制流程：
 
 1. 路径点设置：在三维空间中定义起始点与目标点（位姿）。
@@ -61,13 +62,13 @@ robot_arm_demo/
 
 ## 常见问题
 
-· Q：运行时提示缺少模块？
-  · A：请确保已通过 pip install -r requirements.txt 安装所有依赖。
+· Q：运行时提示缺少模块？  
+· A：请确保已通过 pip install -r requirements.txt 安装所有依赖。
 
 ## 未来展望
 
-· 增加障碍物环境下的避障规划。
-· 支持更复杂的轨迹形状（如圆弧、自定义曲线）。
+· 增加障碍物环境下的避障规划。  
+· 支持更复杂的轨迹形状（如圆弧、自定义曲线）。  
 · 集成视觉伺服，实现“手眼”协调抓取。
 
 
