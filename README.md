@@ -2,7 +2,7 @@
 A demo shows a 6-DoF robot arm move from a position to another position.
 
 六轴机械臂点对点运动控制仿真
-运动gif
+运动gif  
 ![六轴机械臂运动](gif/demo.gif)
 
 ## 项目简介
